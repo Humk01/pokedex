@@ -56,5 +56,15 @@ func Commands() CommandMap {
 			Description: "Catch a Pokemon by name",
 			Callback:    callCatch,
 		},
+		"inspect": {
+			Name:        "inspect",
+			Description: "Inspect a caught Pokemon",
+			Callback:    callInspect,
+		},
+		"pokedex": {
+			Name:        "pokedex",
+			Description: "List all caught Pokemon names",
+			Callback:    callPokedex,
+		},
 	}
 }
