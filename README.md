@@ -38,4 +38,4 @@ A small CLI app for exploring Pokémon location data with request instrumentatio
 1. Run `go run .`
 2. Use the REPL to execute commands.
 3. Inspect `logs/requests.csv` for request timing data.
-4. Add your own notes or examples here.
+   
