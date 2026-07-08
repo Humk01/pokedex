@@ -9,7 +9,7 @@ import (
 var pokemon = make(map[string]struct{})
 
 func Catch(name string, cfg *Config) error {
-	fmt.Printf("Throwing a Pokeball at %s.../n", name)
+	fmt.Printf("Throwing a Pokeball at %s...\n", name)
 	url := fmt.Sprintf("https://pokeapi.co/api/v2/pokemon/%s/", name)
 
 	response, err := requests.GetPokemon(url)
@@ -18,10 +18,10 @@ func Catch(name string, cfg *Config) error {
 	}
 
 	chance := 100.0 / float64(response.BaseExperience)
-	randomValue := rand.Float64() * 100.0
+	randomValue := rand.Float64() 
 
 	if randomValue <= chance {
-		fmt.Printf("You caught %s!\n", name)
+		fmt.Printf("%s was caught!\n", name)
 		pokemon[name] = struct{}{}
 	} else {
 		fmt.Printf("%s escaped!\n", name)

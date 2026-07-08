@@ -51,5 +51,10 @@ func Commands() CommandMap {
 			Description: "Show request performance statistics",
 			Callback:    Stats,
 		},
+		"catch": {
+			Name:        "catch",
+			Description: "Catch a Pokemon by name",
+			Callback:    callCatch,
+		},
 	}
 }
