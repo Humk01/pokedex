@@ -43,16 +43,16 @@ func GetLocationArea(url string) (LocationAreaDetail, error) {
 	return response, nil
 }
 
-func GetPokemon(url string) (PokemonDetail, error) {
+func GetPokemon(url string) (Pokemon, error) {
 	body, _, err := fetchResponseBody(url)
 	if err != nil {
-		return PokemonDetail{}, err
+		return Pokemon{}, err
 	}
 
-	var response PokemonDetail
+	var response Pokemon
 	err = json.Unmarshal(body, &response)
 	if err != nil {
-		return PokemonDetail{}, fmt.Errorf("invalid JSON response from %s: %w", url, err)
+		return Pokemon{}, fmt.Errorf("invalid JSON response from %s: %w", url, err)
 	}
 
 	return response, nil
