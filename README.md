@@ -18,6 +18,9 @@ A small CLI app for exploring Pokémon location data with request instrumentatio
 - `mapb` - go back to the previous page of location areas.
 - `explore <location-area>` - fetch encounters for a location area.
 - `stats` - print runtime request performance statistics.
+- `catch` - catches a pokemon if you are lucky(base on probabiliy using baseExperience.
+- `inspect` - inspects any pokemon that has been caught.
+- `pokedex` - list all the pokemons that have been caught.
 - `benchmark <iterations> <location-area>` - compare cold network request performance with cache hit performance.
 
 ## Instrumentation
