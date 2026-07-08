@@ -1,2 +1,32 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+
+# Test binaries
+*.test
+
+# Coverage
+*.coverprofile
+coverage.out
+
+# Logs
 *.log
+
+# CSV benchmark output
 *.csv
+
+# Build directories
+bin/
+dist/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
