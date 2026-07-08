@@ -6,14 +6,10 @@ import (
 )
 
 func callExplore(cfg *Config) error {
-	location := cfg.Location
-	if location == "" && len(cfg.Args) > 0 {
-		location = cfg.Args[0]
-	}
-	if location == "" {
+	if len(cfg.Args) == 0 {
 		return fmt.Errorf("Please provide a location to explore.")
 	}
-	return Explore(location, cfg)
+	return Explore(cfg.Args[0], cfg)
 }
 
 func Explore(location string, cfg *Config) error {
